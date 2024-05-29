@@ -1,0 +1,87 @@
+[
+  {
+    "id": "7aaeb460-fd1e-4589-b8b9-c4238b1be68c",
+    "name": "Esse",
+    "market": "Equity"
+  },
+  {
+    "id": "1dea64bc-445e-481a-b866-8b5b73ebc13c",
+    "name": "Repellat",
+    "market": "Freight"
+  },
+  {
+    "id": "f581d673-ec61-49bd-8b2d-9272defb1556",
+    "name": "Quisquam",
+    "market": "Metals"
+  },
+  {
+    "id": "d9519323-2b5a-450e-b4f3-36329b446d8e",
+    "name": "Recusandae",
+    "market": "Economy"
+  },
+  {
+    "id": "677e1d98-ddc6-439a-ac05-9d4eb9e2d43c",
+    "name": "Alias",
+    "market": "Foreign Exchange"
+  },
+  {
+    "id": "70a6a773-c300-4dd5-abd1-bc9612a35369",
+    "name": "Consequuntur",
+    "market": "Foreign Exchange"
+  },
+  {
+    "id": "e90c43e9-0bed-4e34-9473-05ab5b569485",
+    "name": "Corporis",
+    "market": "Energy"
+  },
+  {
+    "id": "3de0b2dd-7bfe-4f6b-9b7b-351ff932aa49",
+    "name": "Ratione",
+    "market": "Agriculture"
+  },
+  {
+    "id": "8f63e125-34b0-40d9-a5bd-f255b5d55492",
+    "name": "Ut",
+    "market": "Foreign Exchange"
+  },
+  {
+    "id": "0f1f306a-dafc-4385-b0f5-7efd9537aaa7",
+    "name": "Sunt",
+    "market": "Real Estate"
+  },
+  {
+    "id": "fed04397-3fe0-4d0c-b60b-a3f5d783ee65",
+    "name": "Qui",
+    "market": "Equity"
+  },
+  {
+    "id": "ba102cac-cb99-4f5f-a608-5a0367d7e2ee",
+    "name": "Amet",
+    "market": "Climate"
+  },
+  {
+    "id": "4eceb5c0-5e24-49d4-936c-2fbac2d5b172",
+    "name": "Iure",
+    "market": "Foreign Exchange"
+  },
+  {
+    "id": "64e40673-a077-48d4-971e-4b2d2d409983",
+    "name": "Libero",
+    "market": "Metals"
+  },
+  {
+    "id": "e94aa192-1505-4652-befe-26c5c0e42fb4",
+    "name": "Nulla",
+    "market": "Energy"
+  },
+  {
+    "id": "c11adccc-87a5-40d7-a28f-2a54ebfcf35c",
+    "name": "Quam",
+    "market": "Equity"
+  },
+  {
+    "id": "27b5a088-3fe4-4f7f-ac84-014f61c6088c",
+    "name": "Ipsam",
+    "market": "Climate"
+  }
+]
