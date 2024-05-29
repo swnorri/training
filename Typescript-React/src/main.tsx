@@ -10,5 +10,5 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
       title="Starting Title"
       state="open"
     >This is children props</App>
-  </React.StrictMode>,
+  </React.StrictMode>
 )
