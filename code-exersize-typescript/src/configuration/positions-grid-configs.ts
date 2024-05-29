@@ -1,3 +1,4 @@
+import { ColDef } from "ag-grid-community";
 
 type T_NUMBER = number | null;
 type T_STRING = string | null;
@@ -10,7 +11,7 @@ export type T_ROWDATADETAIL = {
     price: T_NUMBER
 }
 const fieldMapping2 = (name: keyof T_ROWDATADETAIL) => name;
-export const POSITIONCOLDEFDETAIL = [
+export const POSITIONCOLDEFDETAIL: ColDef[] = [
     {
         field: fieldMapping2('deskname'),
         headerName: 'Desk Name',
@@ -29,7 +30,7 @@ export const POSITIONCOLDEFDETAIL = [
     }, {
         field: fieldMapping2('price'),
         headerName: 'Price',
-        valueFormatter: 'CurrencyFormatter',
+        valueFormatter: p => '$' + p.value.toFixed(2),
         type: 'numericColumn',
         flex: 1
     },
@@ -39,22 +40,37 @@ export const POSITIONCOLDEFDETAIL = [
 export type T_ROWDATAMASTER = {
     symbol: T_STRING,
     quantity: T_NUMBER,
+    name: T_STRING,
+    country: T_STRING,
+    description:T_STRING,
     details: T_ROWDATADETAIL[]
 }
 const fieldMapping1 = (name: keyof T_ROWDATAMASTER) => name;
-export const POSITIONCOLDEFMASTER = [
+export const POSITIONCOLDEFMASTER: ColDef[] = [
     {
         field: fieldMapping1('symbol'),
         headerName: 'Symbol',
         cellRenderer: 'agGroupCellRenderer',
-        flex: 2,
-        //sort: 'asc',
+        pinned : true,
+        sort : 'asc',
+        width : 120
     }, {
         field: fieldMapping1('quantity'),
         headerName: 'Quantity',
         type: 'numericColumn',
+        pinned : true,
+        width : 120
+    }, {
+        field: fieldMapping1('name'),
+        headerName: 'Name',
         flex: 1
+    }, {
+        field: fieldMapping1('country'),
+        headerName: 'Country',
+        flex: 1
+    }, {
+        field: fieldMapping1('description'),
+        headerName: 'Description',
+        flex: 4
     }
 ];
-
-

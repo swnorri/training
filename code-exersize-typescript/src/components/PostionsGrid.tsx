@@ -31,7 +31,7 @@ function PositionsGrid() {
     // specific grid styles as memo
     const positionsGridStyle = useMemo(() => ({
         width: '100%',
-        height: '700px',
+        height: '600px',
     }), []);
 
     // sub grid memo, used to pull in details grid and data. Data is 
@@ -80,7 +80,10 @@ function PositionsGrid() {
         });
     }, []);
 
-
+    // Paging parameters
+    const pagination = true;
+    const paginationPageSize = 50;
+    const paginationPageSizeSelector = [50, 100, 200];
 
     return (
         <>
@@ -96,6 +99,9 @@ function PositionsGrid() {
                     onGridReady={onGridReady}
                     rowHeight={26}
                     headerHeight={26}
+                    pagination={pagination}
+                    paginationPageSize={paginationPageSize}
+                    paginationPageSizeSelector={paginationPageSizeSelector}
                 />
             </div>
         </>

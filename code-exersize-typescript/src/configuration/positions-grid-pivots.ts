@@ -41,7 +41,7 @@ export const handleFormatDataBySymbol = (data: any) => {
     const newData = [];
     // Quick check to see if we have transactions, else throw an
     // error as there is no data to work with
-    if(!data.transactions ){
+    if (!data.transactions) {
         throw new Error('No transactions to work with.')
     }
     // Iterate the transactions to build the data structure
@@ -55,6 +55,9 @@ export const handleFormatDataBySymbol = (data: any) => {
             bySymbol[symbol] = {
                 symbol,
                 quantity: 0,
+                name: data.instruments[dTrans.instrument_id].name,
+                country: data.instruments[dTrans.instrument_id].country,
+                description: data.instruments[dTrans.instrument_id].description,
                 details: []
             }
         }
