@@ -27,6 +27,7 @@ export const handlePromiseAllExtraction = (data: T_PROMISEDATA[] = []) => {
             }
         }
     });
+
     return dataroot;
 }
 
@@ -51,7 +52,6 @@ export type T_PIVOTDATA = {
  * 
  */
 export const handlePivotBySymbol = (data: T_PIVOTDATA = {}) => {
-
     const dataStore: any = {};
     const dataArray: any = [];
 

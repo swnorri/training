@@ -56,6 +56,7 @@ export default function PositionsGrid() {
     const positionGridRowDetail = useMemo(() => {
         return {
             detailGridOptions: {
+                suppressCellFocus: true,
                 columnDefs: POSITIONCOLDEFDETAIL,
                 rowHeight: 26,
                 headerHeight: 26
@@ -138,6 +139,7 @@ export default function PositionsGrid() {
                 paginationPageSizeSelector={[50, 100, 200]}
                 loadingOverlayComponent={CustomLoadingOverlay}
                 loadingOverlayComponentParams={{ message: errorMessage }}
+                detailRowAutoHeight={true}
             />
         </div>
     )

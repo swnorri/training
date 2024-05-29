@@ -93,13 +93,15 @@ export const POSITIONCOLDEFMASTER: ColDef[] = [
         type: 'numericColumn',
         valueFormatter:p => Number(p.value).toLocaleString(),
         pinned: true,
-        width: 120,
+        width: 200,
         cellStyle: p => {
             if (p.value < 0) {
                 return { color: 'red' };
             }
             return { color: 'green' };
-        }
+        },
+        filter: 'agNumberColumnFilter',
+        floatingFilter: true
     }, {
         field: fieldMapping1('name'),
         headerName: 'Name',
