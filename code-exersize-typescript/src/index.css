@@ -1,0 +1,19 @@
+html,
+body {
+    height: 100%;
+    margin: 0px;
+}
+
+#root {
+    width: 100%;
+    height: 100%;
+}
+
+.ag-theme-quartz {
+    padding: 20px;
+}
+
+.ag-theme-quartz .ag-details-row {
+    /* calc(var(--ag-grid-size)* 3.75); original value, removed the mulitplier, looks nicer with this theme*/
+    padding: calc(var(--ag-grid-size));
+}

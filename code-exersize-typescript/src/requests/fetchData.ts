@@ -1,5 +1,14 @@
 import { BASE_PATH } from './basePath.ts';
 
+export const FETCHPATHS: {
+    [key: string]: string
+} = {
+    ACCOUNTS: 'accounts',
+    DESKS: 'desks',
+    INSTRUMENTS: 'instruments',
+    TRANSACTIONS: 'transactions'
+};
+
 export async function fetchData(path: string) {
     switch (path) {
         case 'accounts': {
@@ -10,7 +19,7 @@ export async function fetchData(path: string) {
             }
             return {
                 id: 'accounts',
-                dataset : data
+                body: data
             };
         }
         case 'desks': {
@@ -21,7 +30,7 @@ export async function fetchData(path: string) {
             }
             return {
                 id: 'desks',
-                dataset: data
+                body: data
             };
         }
         case 'instruments': {
@@ -32,7 +41,7 @@ export async function fetchData(path: string) {
             }
             return {
                 id: 'instruments',
-                dataset: data
+                body: data
             }
         }
         case 'transactions': {
@@ -43,7 +52,7 @@ export async function fetchData(path: string) {
             }
             return {
                 id: 'transactions',
-                dataset: data
+                body: data
             }
         }
     }
