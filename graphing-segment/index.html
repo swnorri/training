@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>My first three.js app</title>
+		<style>
+			body { margin: 0; }
+		</style>
+        <script type="importmap">
+            {
+              "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@<version>/build/three.module.js",
+                "three/addons/": "https://cdn.jsdelivr.net/npm/three@<version>/examples/jsm/"
+              }
+            }
+          </script>
+	</head>
+	<body style="padding:20px; cursor:crosshair">
+        <label>Move your mouse around like it's a drone!</label><br />
+        <label for="insideBool">Am I Inside?</label>
+        <input type="text" id="insideBool" style="margin-bottom:10px;" />
+		<script type="module" src="/index.js"></script>
+	</body>
+</html>
